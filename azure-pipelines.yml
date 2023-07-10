@@ -67,7 +67,6 @@ stages:
 
   jobs:
   - deployment: Deploy
-    dependsOn: Build
     displayName: Deploy
     environment: 'development'
     pool:
