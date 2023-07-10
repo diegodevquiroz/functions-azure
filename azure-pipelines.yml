@@ -62,12 +62,12 @@ stages:
 
 - stage: Deploy
   displayName: Deploy stage
-  dependsOn: Build
   condition: succeeded()
 
   jobs:
   - deployment: Deploy
     displayName: Deploy
+    dependsOn: Build
     environment: 'development'
     pool:
       vmImage: $(vmImageName)
