@@ -41,5 +41,18 @@ stages:
         deployType: 'SqlTask'
         SqlFile: 'db.sql'
         IpDetectionMethod: 'AutoDetect'
+    - task: SqlAzureDacpacDeployment@1
+      inputs:
+        azureSubscription: 'Azure subscription 1 (d897d75f-01f3-405f-ac55-6525565975a9)'
+        AuthenticationType: 'server'
+        ServerName: 'dbtest22.database.windows.net:1433'
+        DatabaseName: 'dbtest'
+        SqlUsername: 'diegoserver'
+        SqlPassword: 'HiCifraos2023$'
+        deployType: 'SqlTask'
+        SqlFile: 'db.sql'
+        IpDetectionMethod: 'IPAddressRange'
+        StartIpAddress: '181.233.26.46'
+        EndIpAddress: '181.233.26.46'
 
 
