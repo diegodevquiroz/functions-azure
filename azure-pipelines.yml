@@ -42,7 +42,8 @@ stages:
         deployType: 'SqlTask'
         SqlFile: 'db.sql'
         IpDetectionMethod: 'IPAddressRange'
-        StartIpAddress: '181.233.26.46'
-        EndIpAddress: '181.233.26.46'
+        StartIpAddress: '0.0.0.0'
+        EndIpAddress: '0.0.0.0'
+        DeleteFirewallRule: true
 
 
