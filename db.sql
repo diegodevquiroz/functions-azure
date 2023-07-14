@@ -1,4 +1,4 @@
-create table usuario (
+create table tipo (
     id integer,
     nombre varchar(50),
     celular varchar(9)
